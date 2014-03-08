@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<link href="http://localhost:8080/" rel="selenium.base"/>
+<title>Selenium test for TaskControler</title>
+</head>
+<body>
+    <table border="1" cellpadding="1" cellspacing="1">
+        <thead>
+            <tr>
+                <td colspan="3" rowspan="1">Selenium test for TaskControler</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+                    <td>open</td>
+                    <td>http://localhost:8080/SharePortal/tasks?form&amp;lang=en_US</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_description_id</td>
+                    <td>someDescription1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_startPrice_id</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_name_id</td>
+                    <td>someName1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_creationDate_id</td>
+                    <td>Feb 27, 2014</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_updateDate_id</td>
+                    <td>Feb 27, 2014</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_taskStartDate_id</td>
+                    <td>Feb 27, 2014</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_taskEndDate_id</td>
+                    <td>Feb 27, 2014</td>
+                </tr>
+                <tr>
+                    <td>clickAndWait</td>
+                    <td>//input[@id = 'proceed']</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_info_share_portal_domain_Task_description_description_id</td>
+                    <td>someDescription1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_info_share_portal_domain_Task_startPrice_startPrice_id</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_info_share_portal_domain_Task_name_name_id</td>
+                    <td>someName1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_info_share_portal_domain_Task_creationDate_creationDate_id</td>
+                    <td>Feb 27, 2014</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_info_share_portal_domain_Task_updateDate_updateDate_id</td>
+                    <td>Feb 27, 2014</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_info_share_portal_domain_Task_taskStartDate_taskStartDate_id</td>
+                    <td>Feb 27, 2014</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_info_share_portal_domain_Task_taskEndDate_taskEndDate_id</td>
+                    <td>Feb 27, 2014</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>

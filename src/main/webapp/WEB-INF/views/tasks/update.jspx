@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_info_share_portal_domain_Task" modelAttribute="task" path="/tasks" versionField="Version" z="VV8GLY091ZhuUN+XH5Pdmk+aFGo=">
+        <field:input field="description" id="c_info_share_portal_domain_Task_description" required="true" z="VxT/Ywj6r5Gdo7mWsHYmGL3YohA="/>
+        <field:input field="startPrice" id="c_info_share_portal_domain_Task_startPrice" min="0" required="true" validationMessageCode="field_invalid_number" z="QKvWqfy9C5BHwm6q03FTHzBKgKQ="/>
+        <field:input field="name" id="c_info_share_portal_domain_Task_name" required="true" z="24rzQM35Ut36glKcysBack9MDLs="/>
+        <field:datetime dateTimePattern="${task_creationdate_date_format}" field="creationDate" id="c_info_share_portal_domain_Task_creationDate" z="lpD2Z/jkDZMGlDBxzgpWYiU5dzc="/>
+        <field:datetime dateTimePattern="${task_updatedate_date_format}" field="updateDate" id="c_info_share_portal_domain_Task_updateDate" z="6PfroMoyDddPNpYmhRfAsEogSz0="/>
+        <field:datetime dateTimePattern="${task_taskstartdate_date_format}" field="taskStartDate" id="c_info_share_portal_domain_Task_taskStartDate" z="6n2ZxZbNVi/vBm6Frvaa1voBAE4="/>
+        <field:datetime dateTimePattern="${task_taskenddate_date_format}" field="taskEndDate" id="c_info_share_portal_domain_Task_taskEndDate" z="XYktGr5J2vzGdtKizS09voX37Z4="/>
+        <field:select field="category" id="c_info_share_portal_domain_Task_category" items="${categorys}" path="categorys" z="PFSOLQHZ73+lRvmdw+CrL/Nre0E="/>
+        <field:select field="status" id="c_info_share_portal_domain_Task_status" items="${statuses}" path="statuses" z="ezeG75xQbNUCmkhlDbbyzvXH9Ow="/>
+        <field:select field="shareUser" id="c_info_share_portal_domain_Task_shareUser" itemValue="id" items="${shareusers}" path="/shareusers" z="vgrsHCBERvzWSUc+grjWDHRCDGs="/>
+    </form:update>
+</div>

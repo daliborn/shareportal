@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_info_share_portal_domain_Task" object="${task}" path="/tasks" z="p/DojSXjK/ZMCDSh4awP4tuzh1Q=">
+        <field:display field="description" id="s_info_share_portal_domain_Task_description" object="${task}" z="gmDqgxjjOY9kKsx+xbsC+qQ3e0s="/>
+        <field:display field="startPrice" id="s_info_share_portal_domain_Task_startPrice" object="${task}" z="SUVJ55hCOXwSKUDmTr2s3/3YAzs="/>
+        <field:display field="name" id="s_info_share_portal_domain_Task_name" object="${task}" z="ol5MfOonkK7aMGV8qwjJiOUN1hc="/>
+        <field:display date="true" dateTimePattern="${task_creationdate_date_format}" field="creationDate" id="s_info_share_portal_domain_Task_creationDate" object="${task}" z="UggSik4N2k5F6i160es7ef7U5Rc="/>
+        <field:display date="true" dateTimePattern="${task_updatedate_date_format}" field="updateDate" id="s_info_share_portal_domain_Task_updateDate" object="${task}" z="QNm+pSPppUWdvQ/0X3k+p4MUZ7I="/>
+        <field:display date="true" dateTimePattern="${task_taskstartdate_date_format}" field="taskStartDate" id="s_info_share_portal_domain_Task_taskStartDate" object="${task}" z="Dsqya1wm0uTKhsV5ZE6QivFPh/k="/>
+        <field:display date="true" dateTimePattern="${task_taskenddate_date_format}" field="taskEndDate" id="s_info_share_portal_domain_Task_taskEndDate" object="${task}" z="7buoZELUiW0J+0bgUymskUokEmQ="/>
+        <field:display field="category" id="s_info_share_portal_domain_Task_category" object="${task}" z="xs/K4lY6taaxpnBRwJYiqw2T2xw="/>
+        <field:display field="status" id="s_info_share_portal_domain_Task_status" object="${task}" z="wK0nkj83EOmEiZKp56Kt9NVJKY0="/>
+        <field:display field="shareUser" id="s_info_share_portal_domain_Task_shareUser" object="${task}" z="pfYKCT9i38cY2J8Nlvt85/VaQ4s="/>
+    </page:show>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_info_share_portal_domain_ShareUser" items="${shareusers}" z="HLv8DgMCe9EOstY81DpsmdQs4IE=">
+        <table:table data="${shareusers}" id="l_info_share_portal_domain_ShareUser" path="/shareusers" z="YzdNBOiUQOFySGDngS7ar/MAm60=">
+            <table:column id="c_info_share_portal_domain_ShareUser_username" property="username" z="uZzuRv/O+yLtzOaNESEeR9CJWcQ="/>
+            <table:column id="c_info_share_portal_domain_ShareUser_password" property="password" z="ttJdqfR8brJ876xUt7zQx24iFFs="/>
+        </table:table>
+    </page:list>
+</div>

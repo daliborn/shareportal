@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_info_share_portal_domain_Task" items="${tasks}" z="FEAjD5Dv0em1S+2VapMNV+Zrqxs=">
+        <table:table data="${tasks}" id="l_info_share_portal_domain_Task" path="/tasks" z="+PV2Z9F2SttNdDZQaPkKsk7TT3s=">
+            <table:column id="c_info_share_portal_domain_Task_description" property="description" z="dzEUDoInsiEvkPJ5FBXa7T4ftp0="/>
+            <table:column id="c_info_share_portal_domain_Task_startPrice" property="startPrice" z="+iUW4kLn12vEkdAnc3GUjU5A3Zk="/>
+            <table:column id="c_info_share_portal_domain_Task_name" property="name" z="1EwMs2t/latCaYwt9FpSmrqoxuw="/>
+            <table:column date="true" dateTimePattern="${task_creationdate_date_format}" id="c_info_share_portal_domain_Task_creationDate" property="creationDate" z="CY0nWRF7Ct09AsKH5U5GdBKdJZ0="/>
+            <table:column date="true" dateTimePattern="${task_updatedate_date_format}" id="c_info_share_portal_domain_Task_updateDate" property="updateDate" z="qvVex0Bc2UXOV/dxWHH4WwYKoX4="/>
+            <table:column date="true" dateTimePattern="${task_taskstartdate_date_format}" id="c_info_share_portal_domain_Task_taskStartDate" property="taskStartDate" z="PdjfMglicb0htbE+xdAqjV1D4eE="/>
+        </table:table>
+    </page:list>
+</div>

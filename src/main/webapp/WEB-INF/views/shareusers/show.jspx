@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_info_share_portal_domain_ShareUser" object="${shareuser}" path="/shareusers" z="QkcZV4/LsZkZeAGhv2UsUQPZMEQ=">
+        <field:display field="username" id="s_info_share_portal_domain_ShareUser_username" object="${shareuser}" z="nR9hNueoK5oeeZv6TBpBFObvix8="/>
+        <field:display field="password" id="s_info_share_portal_domain_ShareUser_password" object="${shareuser}" z="IB3c2WWzVhKGirnDj4WpaTvR278="/>
+    </page:show>
+</div>
