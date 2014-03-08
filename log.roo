@@ -139,3 +139,4 @@ hint
 // [failed] enum constant --name ROLE_ADMIN
 enum type --class ~.domain.enums.EnumRole
 enum constant --name ROLE_ADMIN
+enum constant --name ROLE_USER
