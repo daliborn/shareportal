@@ -23,4 +23,12 @@ privileged aspect ShareUser_Roo_JavaBean {
         this.password = password;
     }
     
+    public Boolean ShareUser.getEnabled() {
+        return this.enabled;
+    }
+    
+    public void ShareUser.setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
+    
 }

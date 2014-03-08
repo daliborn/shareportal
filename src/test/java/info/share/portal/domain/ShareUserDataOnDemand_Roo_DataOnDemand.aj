@@ -24,9 +24,15 @@ privileged aspect ShareUserDataOnDemand_Roo_DataOnDemand {
     
     public ShareUser ShareUserDataOnDemand.getNewTransientShareUser(int index) {
         ShareUser obj = new ShareUser();
+        setEnabled(obj, index);
         setPassword(obj, index);
         setUsername(obj, index);
         return obj;
+    }
+    
+    public void ShareUserDataOnDemand.setEnabled(ShareUser obj, int index) {
+        Boolean enabled = Boolean.TRUE;
+        obj.setEnabled(enabled);
     }
     
     public void ShareUserDataOnDemand.setPassword(ShareUser obj, int index) {

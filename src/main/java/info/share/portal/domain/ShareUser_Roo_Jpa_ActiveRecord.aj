@@ -14,7 +14,7 @@ privileged aspect ShareUser_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager ShareUser.entityManager;
     
-    public static final List<String> ShareUser.fieldNames4OrderClauseFilter = java.util.Arrays.asList("username", "password");
+    public static final List<String> ShareUser.fieldNames4OrderClauseFilter = java.util.Arrays.asList("username", "password", "enabled");
     
     public static final EntityManager ShareUser.entityManager() {
         EntityManager em = new ShareUser().entityManager;

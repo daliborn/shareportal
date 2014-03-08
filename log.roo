@@ -125,3 +125,4 @@ logging setup --level INFO
 focus --class ~.domain.ShareUser
 hint 
 hint fields
+field boolean --fieldName enabled --notNull

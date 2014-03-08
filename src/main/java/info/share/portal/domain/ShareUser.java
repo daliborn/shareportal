@@ -18,4 +18,9 @@ public class ShareUser {
      */
     @NotNull
     private String password;
+
+    /**
+     */
+    @NotNull
+    private Boolean enabled;
 }

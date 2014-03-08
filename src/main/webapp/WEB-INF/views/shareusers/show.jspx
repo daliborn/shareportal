@@ -5,5 +5,6 @@
     <page:show id="ps_info_share_portal_domain_ShareUser" object="${shareuser}" path="/shareusers" z="QkcZV4/LsZkZeAGhv2UsUQPZMEQ=">
         <field:display field="username" id="s_info_share_portal_domain_ShareUser_username" object="${shareuser}" z="nR9hNueoK5oeeZv6TBpBFObvix8="/>
         <field:display field="password" id="s_info_share_portal_domain_ShareUser_password" object="${shareuser}" z="IB3c2WWzVhKGirnDj4WpaTvR278="/>
+        <field:display field="enabled" id="s_info_share_portal_domain_ShareUser_enabled" object="${shareuser}" z="mnEty9D/4KcUx2wmkJvOqztFypE="/>
     </page:show>
 </div>

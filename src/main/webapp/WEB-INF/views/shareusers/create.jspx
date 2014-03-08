@@ -5,6 +5,7 @@
     <form:create id="fc_info_share_portal_domain_ShareUser" modelAttribute="shareUser" path="/shareusers" render="${empty dependencies}" z="XE2rYQ/FWIwZu/4d9qcXy4sdLJg=">
         <field:input field="username" id="c_info_share_portal_domain_ShareUser_username" required="true" z="jXYY34tIFDJ+XgnshtarqasK4SQ="/>
         <field:input field="password" id="c_info_share_portal_domain_ShareUser_password" required="true" z="T2y5ByC9k4oWkKXNmxHlrqmwb0E="/>
+        <field:checkbox field="enabled" id="c_info_share_portal_domain_ShareUser_enabled" z="c/RouT6skL1A+5zyWLbANWH5JWM="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_info_share_portal_domain_ShareUser" render="${not empty dependencies}" z="ZypG5a+ec8fxYmwuh/eT2IlkGTc="/>
 </div>
