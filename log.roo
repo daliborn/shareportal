@@ -123,3 +123,4 @@ help git setup
 git commit all --message import
 logging setup --level INFO 
 focus --class ~.domain.ShareUser
+hint 
