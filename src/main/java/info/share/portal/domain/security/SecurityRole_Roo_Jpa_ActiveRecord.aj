@@ -14,7 +14,7 @@ privileged aspect SecurityRole_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager SecurityRole.entityManager;
     
-    public static final List<String> SecurityRole.fieldNames4OrderClauseFilter = java.util.Arrays.asList("");
+    public static final List<String> SecurityRole.fieldNames4OrderClauseFilter = java.util.Arrays.asList("authority");
     
     public static final EntityManager SecurityRole.entityManager() {
         EntityManager em = new SecurityRole().entityManager;

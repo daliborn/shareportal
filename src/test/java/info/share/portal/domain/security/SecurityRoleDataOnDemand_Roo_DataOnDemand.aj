@@ -3,6 +3,7 @@
 
 package info.share.portal.domain.security;
 
+import info.share.portal.domain.enums.EnumRole;
 import info.share.portal.domain.security.SecurityRole;
 import info.share.portal.domain.security.SecurityRoleDataOnDemand;
 import java.security.SecureRandom;
@@ -24,7 +25,13 @@ privileged aspect SecurityRoleDataOnDemand_Roo_DataOnDemand {
     
     public SecurityRole SecurityRoleDataOnDemand.getNewTransientSecurityRole(int index) {
         SecurityRole obj = new SecurityRole();
+        setAuthority(obj, index);
         return obj;
+    }
+    
+    public void SecurityRoleDataOnDemand.setAuthority(SecurityRole obj, int index) {
+        EnumRole authority = EnumRole.class.getEnumConstants()[0];
+        obj.setAuthority(authority);
     }
     
     public SecurityRole SecurityRoleDataOnDemand.getSpecificSecurityRole(int index) {
