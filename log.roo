@@ -136,3 +136,5 @@ entity jpa --class ~.domain.security.SecurityRole --testAutomatically
 focus --class ~.domain.security.SecurityRole
 focus --class ~.domain.security.SecurityRole
 hint 
+// [failed] enum constant --name ROLE_ADMIN
+enum type --class ~.domain.enums.EnumRole
