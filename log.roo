@@ -114,3 +114,4 @@ git commit all --message initial
 git config --userName daliborn --repoUrl https://github.com/daliborn/Share.git
 git commit all --message initial
 git commit all --message initial
+help git
