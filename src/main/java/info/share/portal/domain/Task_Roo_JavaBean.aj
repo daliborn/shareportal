@@ -3,10 +3,10 @@
 
 package info.share.portal.domain;
 
-import info.share.portal.domain.ShareUser;
 import info.share.portal.domain.Task;
 import info.share.portal.domain.enums.Category;
 import info.share.portal.domain.enums.Status;
+import info.share.portal.domain.security.ShareUser;
 import java.math.BigDecimal;
 import java.util.Date;
 

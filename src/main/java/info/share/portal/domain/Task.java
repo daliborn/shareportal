@@ -23,6 +23,7 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
 import info.share.portal.domain.enums.Status;
+import info.share.portal.domain.security.ShareUser;
 
 import javax.persistence.ManyToOne;
 

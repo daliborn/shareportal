@@ -3,8 +3,8 @@
 
 package info.share.portal.web;
 
-import info.share.portal.domain.ShareUser;
 import info.share.portal.domain.Task;
+import info.share.portal.domain.security.ShareUser;
 import info.share.portal.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
@@ -13,30 +13,6 @@ import org.springframework.format.FormatterRegistry;
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
     
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
-    
-    public Converter<ShareUser, String> ApplicationConversionServiceFactoryBean.getShareUserToStringConverter() {
-        return new org.springframework.core.convert.converter.Converter<info.share.portal.domain.ShareUser, java.lang.String>() {
-            public String convert(ShareUser shareUser) {
-                return new StringBuilder().append(shareUser.getUsername()).append(' ').append(shareUser.getPassword()).toString();
-            }
-        };
-    }
-    
-    public Converter<Long, ShareUser> ApplicationConversionServiceFactoryBean.getIdToShareUserConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.Long, info.share.portal.domain.ShareUser>() {
-            public info.share.portal.domain.ShareUser convert(java.lang.Long id) {
-                return ShareUser.findShareUser(id);
-            }
-        };
-    }
-    
-    public Converter<String, ShareUser> ApplicationConversionServiceFactoryBean.getStringToShareUserConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.String, info.share.portal.domain.ShareUser>() {
-            public info.share.portal.domain.ShareUser convert(String id) {
-                return getObject().convert(getObject().convert(id, Long.class), ShareUser.class);
-            }
-        };
-    }
     
     public Converter<Task, String> ApplicationConversionServiceFactoryBean.getTaskToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<info.share.portal.domain.Task, java.lang.String>() {
@@ -62,13 +38,37 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<ShareUser, String> ApplicationConversionServiceFactoryBean.getShareUserToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<info.share.portal.domain.security.ShareUser, java.lang.String>() {
+            public String convert(ShareUser shareUser) {
+                return new StringBuilder().append(shareUser.getUsername()).append(' ').append(shareUser.getPassword()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, ShareUser> ApplicationConversionServiceFactoryBean.getIdToShareUserConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, info.share.portal.domain.security.ShareUser>() {
+            public info.share.portal.domain.security.ShareUser convert(java.lang.Long id) {
+                return ShareUser.findShareUser(id);
+            }
+        };
+    }
+    
+    public Converter<String, ShareUser> ApplicationConversionServiceFactoryBean.getStringToShareUserConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, info.share.portal.domain.security.ShareUser>() {
+            public info.share.portal.domain.security.ShareUser convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), ShareUser.class);
+            }
+        };
+    }
+    
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
-        registry.addConverter(getShareUserToStringConverter());
-        registry.addConverter(getIdToShareUserConverter());
-        registry.addConverter(getStringToShareUserConverter());
         registry.addConverter(getTaskToStringConverter());
         registry.addConverter(getIdToTaskConverter());
         registry.addConverter(getStringToTaskConverter());
+        registry.addConverter(getShareUserToStringConverter());
+        registry.addConverter(getIdToShareUserConverter());
+        registry.addConverter(getStringToShareUserConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {

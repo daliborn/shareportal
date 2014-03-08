@@ -1,6 +1,4 @@
-package info.share.portal.domain;
-import info.share.portal.domain.security.ShareUser;
-
+package info.share.portal.domain.security;
 import org.junit.Test;
 import org.springframework.roo.addon.test.RooIntegrationTest;
 

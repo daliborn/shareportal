@@ -3,7 +3,7 @@
 
 package info.share.portal.web;
 
-import info.share.portal.domain.ShareUser;
+import info.share.portal.domain.security.ShareUser;
 import info.share.portal.web.ShareUserControler;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;

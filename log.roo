@@ -126,3 +126,7 @@ focus --class ~.domain.ShareUser
 hint 
 hint fields
 field boolean --fieldName enabled --notNull
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-08 12:45:23
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-08 12:45:36
+// [failed] test integration --entity info.share.portal
+test integration --entity ~.domain.security.ShareUser

@@ -3,11 +3,11 @@
 
 package info.share.portal.domain;
 
-import info.share.portal.domain.ShareUserDataOnDemand;
 import info.share.portal.domain.Task;
 import info.share.portal.domain.TaskDataOnDemand;
 import info.share.portal.domain.enums.Category;
 import info.share.portal.domain.enums.Status;
+import info.share.portal.domain.security.ShareUserDataOnDemand;
 import java.math.BigDecimal;
 import java.security.SecureRandom;
 import java.util.ArrayList;

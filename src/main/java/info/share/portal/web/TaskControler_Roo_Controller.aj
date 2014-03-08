@@ -3,10 +3,10 @@
 
 package info.share.portal.web;
 
-import info.share.portal.domain.ShareUser;
 import info.share.portal.domain.Task;
 import info.share.portal.domain.enums.Category;
 import info.share.portal.domain.enums.Status;
+import info.share.portal.domain.security.ShareUser;
 import info.share.portal.web.TaskControler;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
@@ -102,9 +102,9 @@ privileged aspect TaskControler_Roo_Controller {
     void TaskControler.populateEditForm(Model uiModel, Task task) {
         uiModel.addAttribute("task", task);
         addDateTimeFormatPatterns(uiModel);
-        uiModel.addAttribute("shareusers", ShareUser.findAllShareUsers());
         uiModel.addAttribute("categorys", Arrays.asList(Category.values()));
         uiModel.addAttribute("statuses", Arrays.asList(Status.values()));
+        uiModel.addAttribute("shareusers", ShareUser.findAllShareUsers());
     }
     
     String TaskControler.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
