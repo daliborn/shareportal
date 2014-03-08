@@ -134,3 +134,4 @@ test integration --entity ~.domain.security.ShareUser
 entity jpa --class ~.domain.security.SecurityRole --testAutomatically 
 // [failed] enum type --class ~.domain.enums.Role
 focus --class ~.domain.security.SecurityRole
+focus --class ~.domain.security.SecurityRole
