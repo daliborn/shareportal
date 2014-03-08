@@ -4,9 +4,13 @@
 
   <spring:message var="app_name" code="application_name" htmlEscape="false" />
   <spring:url var="home" value="/" />
+  
+      <a href="${home}">
       <h3>
-      <spring:message code="welcome_h3" arguments="${app_name}" />
+      <spring:message code="welcome_h3" />
     </h3>
+      
+    </a>
     <p>
       <spring:message code="welcome_text" />
     </p>

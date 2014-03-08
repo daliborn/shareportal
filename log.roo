@@ -121,3 +121,4 @@ git config
 git commit all --message initial
 help git setup
 git commit all --message import
+logging setup --level INFO 
