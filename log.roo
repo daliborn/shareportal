@@ -1,0 +1,114 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-17 11:40:56
+project --topLevelPackage info.share.portal --projectName SharePortal --java 7 --packaging JAR
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-02-17 11:41:02
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-17 11:42:15
+hint
+jpa setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE 
+hint 
+entity jpa --class ~.domain.Task --testAutomatically
+hint
+field string --fieldName description --notNull 
+hint
+hint fields
+field number --fieldName startPrice --type java.math.BigDecimal --min 0
+field string --fieldName name --notNull 
+field date --fieldName creationDate --type java.util.Date
+field date --fieldName updateDate --type java.util.Date
+field date --fieldName taskStartDate --type java.util.Date
+field date --fieldName taskEndDate --type java.util.Date
+// [failed] enum type --class ~.domain.enum.Category
+enum type --class ~.domain.enums.Category
+// [failed] enum constant --name LANGUAGE
+enum constant --name PROGRAMMING
+focus --class ~.domain.Task
+field enum --fieldName category --type ~.domain.enums.Category --enumType STRING 
+enum type --class ~.domain.enums.Status 
+focus --class ~.domain.Task
+// [failed] field enum --fieldName category --type ~.domain.enums.Status --enumType STRING 
+field enum --fieldName status --type ~.domain.enums.Status --enumType STRING 
+focus --class ~.domain.enums.Status
+enum constant --name FINISHED
+hint
+perform tests
+web mvc setup 
+security setup
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-02-17 13:33:33
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-19 19:52:08
+hint
+exit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-02-19 19:55:32
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-22 07:51:17
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-22 16:08:58
+hint
+hint fields
+hint
+hint entities
+// [failed] entity jpa --class ~.domain.User --testAutomatically 
+addon list 
+addon search --requiresDescription user
+addon info id --searchResultId 01
+jpa setup --database MYSQL --provider HIBERNATE 
+properties set --name database.properties --path SPRING_CONFIG_ROOT --key database.url --value jdbc:mysql://localhost:3306/share
+properties set --name database.properties --path SPRING_CONFIG_ROOT --key database.username --value root
+properties set --name database.properties --path SPRING_CONFIG_ROOT --key database.password --value root
+// [failed] test integration 
+focus --class ~.domain.Task
+test integration 
+test integration 
+web mvc scaffold --class ~.web.TaskControler --backingType ~.domain.Task
+web mvc controller --class ~.web.IndexControler
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-23 09:51:34
+hint
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-02-23 10:49:24
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-25 05:53:54
+entity jpa --class ~.domain.ShareUser --testAutomatically
+field string --fieldName username --notNull
+field string --fieldName password --notNull 
+focus --class ~.domain.Task
+// [failed] field reference --type ~.domain.ShareUser --fieldName user
+field reference --type ~.domain.ShareUser --fieldName shareUser
+perform tests
+web mvc scaffold --class ~.web.ShareUserControler --backingType ~.domain.ShareUser
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-02-25 06:39:36
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-27 18:36:52
+exit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-02-27 18:39:16
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-27 18:39:39
+selenium test --controller ~.web.TaskControler
+exit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-02-27 18:56:17
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-02-28 18:16:45
+web mvc scaffold --class ~.web.ShareUserControler --backingType ~.domain.ShareUser
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-02-28 23:32:23
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-03-06 20:20:28
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-03-06 20:35:08
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-03-08 07:56:29
+pgp automatic trust
+addon install bundle --bundleSymbolicName  org.springframework.roo.addon.git
+addon install bundle --bundleSymbolicName org.springframework.roo.addon.git
+addon list 
+addon search --requiresDescription git
+addon info id --searchResultId 01
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.git
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id --searchResultId 01
+version 
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-08 08:48:28
+addon list 
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.git
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id 15
+git setup
+git commit all --message initialImport
+help git
+git config --userName daliborn --repoUrl https://github.com/daliborn/shareportal
+git commit all --message initial
+// [failed] git commit all --message initial
+// [failed] git commit all --message initial
+git config --userName daliborn --repoUrl https://github.com/daliborn/Share.git
