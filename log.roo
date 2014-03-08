@@ -120,3 +120,4 @@ git config
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-08 10:36:59
 git commit all --message initial
 help git setup
+git commit all --message import
