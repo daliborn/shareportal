@@ -3,7 +3,9 @@
 
 package info.share.portal.domain.security;
 
+import info.share.portal.domain.Offer;
 import info.share.portal.domain.security.ShareUser;
+import java.util.Set;
 
 privileged aspect ShareUser_Roo_JavaBean {
     
@@ -29,6 +31,14 @@ privileged aspect ShareUser_Roo_JavaBean {
     
     public void ShareUser.setEnabled(Boolean enabled) {
         this.enabled = enabled;
+    }
+    
+    public Set<Offer> ShareUser.getOffers() {
+        return this.offers;
+    }
+    
+    public void ShareUser.setOffers(Set<Offer> offers) {
+        this.offers = offers;
     }
     
 }

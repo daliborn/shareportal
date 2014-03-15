@@ -6,6 +6,7 @@
         <field:input field="username" id="c_info_share_portal_domain_security_ShareUser_username" required="true" z="W76CRonr4UohLunkd5O63utjlzo="/>
         <field:input field="password" id="c_info_share_portal_domain_security_ShareUser_password" required="true" z="UNdOXRBP10IKyyJrzLLEWLqYJ80="/>
         <field:checkbox field="enabled" id="c_info_share_portal_domain_security_ShareUser_enabled" z="zKd6PR5/Rq/rJ6cqznpmYtXfVnE="/>
+        <field:simple field="offers" id="c_info_share_portal_domain_security_ShareUser_offers" messageCode="entity_reference_not_managed" messageCodeAttribute="Offer" z="756juN2nPP+jcaYOCM14Asth4pU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_info_share_portal_domain_security_ShareUser" render="${not empty dependencies}" z="W23C9o8mDoZohHHLWyLJ3XrrPv8="/>
 </div>

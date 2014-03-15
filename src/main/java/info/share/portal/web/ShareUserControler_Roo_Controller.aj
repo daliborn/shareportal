@@ -3,6 +3,7 @@
 
 package info.share.portal.web;
 
+import info.share.portal.domain.Offer;
 import info.share.portal.domain.security.ShareUser;
 import info.share.portal.web.ShareUserControler;
 import java.io.UnsupportedEncodingException;
@@ -86,6 +87,7 @@ privileged aspect ShareUserControler_Roo_Controller {
     
     void ShareUserControler.populateEditForm(Model uiModel, ShareUser shareUser) {
         uiModel.addAttribute("shareUser", shareUser);
+        uiModel.addAttribute("offers", Offer.findAllOffers());
     }
     
     String ShareUserControler.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
