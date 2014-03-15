@@ -5,6 +5,7 @@ package info.share.portal.domain;
 
 import info.share.portal.domain.Offer;
 import java.math.BigDecimal;
+import java.util.Date;
 
 privileged aspect Offer_Roo_JavaBean {
     
@@ -22,6 +23,14 @@ privileged aspect Offer_Roo_JavaBean {
     
     public void Offer.setPrice(BigDecimal price) {
         this.price = price;
+    }
+    
+    public Date Offer.getCreateDate() {
+        return this.createDate;
+    }
+    
+    public void Offer.setCreateDate(Date createDate) {
+        this.createDate = createDate;
     }
     
 }

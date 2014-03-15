@@ -152,3 +152,4 @@ field enum --type ~.domain.enums.EnumRole --fieldName authority --notNull
 entity jpa --class ~.domain.Offer --testAutomatically 
 field string --fieldName description --notNull 
 field number --fieldName price --type java.math.BigDecimal --notNull 
+field date --fieldName createDate --type java.util.Date --past 

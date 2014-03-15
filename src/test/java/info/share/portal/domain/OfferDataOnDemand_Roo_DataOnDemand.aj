@@ -8,6 +8,7 @@ import info.share.portal.domain.OfferDataOnDemand;
 import java.math.BigDecimal;
 import java.security.SecureRandom;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
@@ -25,9 +26,15 @@ privileged aspect OfferDataOnDemand_Roo_DataOnDemand {
     
     public Offer OfferDataOnDemand.getNewTransientOffer(int index) {
         Offer obj = new Offer();
+        setCreateDate(obj, index);
         setDescription(obj, index);
         setPrice(obj, index);
         return obj;
+    }
+    
+    public void OfferDataOnDemand.setCreateDate(Offer obj, int index) {
+        Date createDate = new Date(new Date().getTime() - 10000000L);
+        obj.setCreateDate(createDate);
     }
     
     public void OfferDataOnDemand.setDescription(Offer obj, int index) {
