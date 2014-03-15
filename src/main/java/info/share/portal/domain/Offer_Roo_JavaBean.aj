@@ -4,6 +4,7 @@
 package info.share.portal.domain;
 
 import info.share.portal.domain.Offer;
+import info.share.portal.domain.Task;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -31,6 +32,14 @@ privileged aspect Offer_Roo_JavaBean {
     
     public void Offer.setCreateDate(Date createDate) {
         this.createDate = createDate;
+    }
+    
+    public Task Offer.getTask() {
+        return this.task;
+    }
+    
+    public void Offer.setTask(Task task) {
+        this.task = task;
     }
     
 }

@@ -9,6 +9,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Past;
 import org.springframework.format.annotation.DateTimeFormat;
+import javax.persistence.ManyToOne;
 
 @RooJavaBean
 @RooToString
@@ -31,4 +32,9 @@ public class Offer {
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date createDate;
+
+    /**
+     */
+    @ManyToOne
+    private Task task;
 }

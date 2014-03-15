@@ -5,6 +5,7 @@ package info.share.portal.domain;
 
 import info.share.portal.domain.Offer;
 import info.share.portal.domain.OfferDataOnDemand;
+import info.share.portal.domain.TaskDataOnDemand;
 import java.math.BigDecimal;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect OfferDataOnDemand_Roo_DataOnDemand {
@@ -23,6 +25,9 @@ privileged aspect OfferDataOnDemand_Roo_DataOnDemand {
     private Random OfferDataOnDemand.rnd = new SecureRandom();
     
     private List<Offer> OfferDataOnDemand.data;
+    
+    @Autowired
+    TaskDataOnDemand OfferDataOnDemand.taskDataOnDemand;
     
     public Offer OfferDataOnDemand.getNewTransientOffer(int index) {
         Offer obj = new Offer();
