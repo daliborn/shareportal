@@ -16,8 +16,12 @@
 <aspect name="info.share.portal.domain.security.ShareUser_Roo_JavaBean"/>
 <aspect name="info.share.portal.domain.security.SecurityRole_Roo_JavaBean"/>
 <aspect name="info.share.portal.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="info.share.portal.domain.Offer_Roo_ToString"/>
 <aspect name="info.share.portal.domain.Task_Roo_Configurable"/>
 <aspect name="info.share.portal.domain.Task_Roo_ToString"/>
+<aspect name="info.share.portal.domain.Offer_Roo_Jpa_Entity"/>
+<aspect name="info.share.portal.domain.Offer_Roo_Jpa_ActiveRecord"/>
+<aspect name="info.share.portal.domain.Offer_Roo_Configurable"/>
 </aspects>
 </aspectj>
 

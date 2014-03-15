@@ -24,7 +24,13 @@ privileged aspect OfferDataOnDemand_Roo_DataOnDemand {
     
     public Offer OfferDataOnDemand.getNewTransientOffer(int index) {
         Offer obj = new Offer();
+        setDescription(obj, index);
         return obj;
+    }
+    
+    public void OfferDataOnDemand.setDescription(Offer obj, int index) {
+        String description = "description_" + index;
+        obj.setDescription(description);
     }
     
     public Offer OfferDataOnDemand.getSpecificOffer(int index) {
