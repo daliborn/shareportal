@@ -3,6 +3,7 @@
 
 package info.share.portal.web;
 
+import info.share.portal.domain.Offer;
 import info.share.portal.domain.Task;
 import info.share.portal.domain.security.ShareUser;
 import info.share.portal.web.ApplicationConversionServiceFactoryBean;
@@ -13,6 +14,30 @@ import org.springframework.format.FormatterRegistry;
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
     
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
+    
+    public Converter<Offer, String> ApplicationConversionServiceFactoryBean.getOfferToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<info.share.portal.domain.Offer, java.lang.String>() {
+            public String convert(Offer offer) {
+                return new StringBuilder().append(offer.getDescription()).append(' ').append(offer.getPrice()).append(' ').append(offer.getCreateDate()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Offer> ApplicationConversionServiceFactoryBean.getIdToOfferConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, info.share.portal.domain.Offer>() {
+            public info.share.portal.domain.Offer convert(java.lang.Long id) {
+                return Offer.findOffer(id);
+            }
+        };
+    }
+    
+    public Converter<String, Offer> ApplicationConversionServiceFactoryBean.getStringToOfferConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, info.share.portal.domain.Offer>() {
+            public info.share.portal.domain.Offer convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Offer.class);
+            }
+        };
+    }
     
     public Converter<Task, String> ApplicationConversionServiceFactoryBean.getTaskToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<info.share.portal.domain.Task, java.lang.String>() {
@@ -63,6 +88,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     }
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
+        registry.addConverter(getOfferToStringConverter());
+        registry.addConverter(getIdToOfferConverter());
+        registry.addConverter(getStringToOfferConverter());
         registry.addConverter(getTaskToStringConverter());
         registry.addConverter(getIdToTaskConverter());
         registry.addConverter(getStringToTaskConverter());

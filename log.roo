@@ -163,3 +163,4 @@ field set --fieldName offers --type ~.domain.Offer --cardinality ONE_TO_MANY --m
 focus --class ~.domain.Offer
 // [failed] field reference --fieldName user --type ~.domain.security.ShareUser --cardinality MANY_TO_ONE 
 field reference --fieldName shareuser --type ~.domain.security.ShareUser --cardinality MANY_TO_ONE 
+web mvc scaffold --class ~.web.OfferControler --backingType ~.domain.Offer

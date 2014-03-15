@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_info_share_portal_domain_Offer" modelAttribute="offer" path="/offers" versionField="Version" z="y6DfUWrhQG+9OYo3t+ghas2QuBE=">
+        <field:input field="description" id="c_info_share_portal_domain_Offer_description" required="true" z="7cIi7a2hnJoKXnPRvo5dD4RdW34="/>
+        <field:input field="price" id="c_info_share_portal_domain_Offer_price" required="true" validationMessageCode="field_invalid_number" z="pP973KS3S+RDe8ofd4fhgCs8hXw="/>
+        <field:datetime dateTimePattern="${offer_createdate_date_format}" field="createDate" id="c_info_share_portal_domain_Offer_createDate" past="true" z="9DISFTHyRrFQLviZGUcGNu1Dqic="/>
+        <field:select field="task" id="c_info_share_portal_domain_Offer_task" itemValue="id" items="${tasks}" path="/tasks" z="uwzEpORsMGNqBkiNX5si9w7a6AE="/>
+        <field:select field="shareuser" id="c_info_share_portal_domain_Offer_shareuser" itemValue="id" items="${shareusers}" path="/shareusers" z="y64ke/b7BXYsNz27InX8YwBSido="/>
+    </form:update>
+</div>

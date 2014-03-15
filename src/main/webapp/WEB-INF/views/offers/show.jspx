@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_info_share_portal_domain_Offer" object="${offer}" path="/offers" z="n8gjEMP7I+J6nS2wObBiwZ48Szw=">
+        <field:display field="description" id="s_info_share_portal_domain_Offer_description" object="${offer}" z="ECA9yvmAjWdz8T04eBE9hlNXhrU="/>
+        <field:display field="price" id="s_info_share_portal_domain_Offer_price" object="${offer}" z="cMa9f0rpXey2I+b1olVNklrUhNA="/>
+        <field:display date="true" dateTimePattern="${offer_createdate_date_format}" field="createDate" id="s_info_share_portal_domain_Offer_createDate" object="${offer}" z="pXw5lfPRtgvrerQEslhASe/kfzI="/>
+        <field:display field="task" id="s_info_share_portal_domain_Offer_task" object="${offer}" z="pXoPUpsmYw95EbrTMi6wnMeyh/0="/>
+        <field:display field="shareuser" id="s_info_share_portal_domain_Offer_shareuser" object="${offer}" z="7TtaZkVmTwv063MwPH60dJxZD7M="/>
+    </page:show>
+</div>
