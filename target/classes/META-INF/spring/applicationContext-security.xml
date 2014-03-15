@@ -27,7 +27,7 @@
 				users-by-username-query="SELECT username, password, enabled 
             	FROM share_user WHERE username = ?"
 				authorities-by-username-query="SELECT p.username, a.authority 
-				FROM share_user p, security_authorities a, security_role_assignments ra
+				FROM share_user p, security_role a, security_role_assignments ra
 			    WHERE p.username = ra.username
 			    AND a.roleId = ra.roleId AND p.username = ?" />
 

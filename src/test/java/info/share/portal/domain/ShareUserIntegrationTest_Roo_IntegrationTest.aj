@@ -3,9 +3,9 @@
 
 package info.share.portal.domain;
 
-import info.share.portal.domain.ShareUserDataOnDemand;
 import info.share.portal.domain.ShareUserIntegrationTest;
 import info.share.portal.domain.security.ShareUser;
+import info.share.portal.domain.security.ShareUserDataOnDemand;
 import java.util.Iterator;
 import java.util.List;
 import javax.validation.ConstraintViolation;

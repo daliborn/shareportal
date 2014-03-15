@@ -142,3 +142,11 @@ enum constant --name ROLE_ADMIN
 enum constant --name ROLE_USER
 focus --class ~.domain.security.SecurityRole
 field enum --type ~.domain.enums.EnumRole --fieldName authority --notNull 
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-08 16:27:02
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-08 21:36:51
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-08 21:43:29
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-09 07:00:38
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-09 07:15:56
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-12 18:41:21
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-15 08:43:14
+entity jpa --class ~.domain.Offer --testAutomatically 
