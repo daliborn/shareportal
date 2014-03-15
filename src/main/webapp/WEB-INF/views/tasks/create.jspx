@@ -13,6 +13,7 @@
         <field:select field="category" id="c_info_share_portal_domain_Task_category" items="${categorys}" path="categorys" z="PFSOLQHZ73+lRvmdw+CrL/Nre0E="/>
         <field:select field="status" id="c_info_share_portal_domain_Task_status" items="${statuses}" path="statuses" z="ezeG75xQbNUCmkhlDbbyzvXH9Ow="/>
         <field:select field="shareUser" id="c_info_share_portal_domain_Task_shareUser" itemValue="id" items="${shareusers}" path="/shareusers" z="vgrsHCBERvzWSUc+grjWDHRCDGs="/>
+        <field:simple field="offers" id="c_info_share_portal_domain_Task_offers" messageCode="entity_reference_not_managed" messageCodeAttribute="Offer" z="XbGUaBXrX94XnJEExb3Kh69vlNU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_info_share_portal_domain_Task" render="${not empty dependencies}" z="ewKeZRRsA5a2RoemwGRyQ92+5Jw="/>
 </div>

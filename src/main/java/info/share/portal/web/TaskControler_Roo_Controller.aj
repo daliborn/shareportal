@@ -3,6 +3,7 @@
 
 package info.share.portal.web;
 
+import info.share.portal.domain.Offer;
 import info.share.portal.domain.Task;
 import info.share.portal.domain.enums.Category;
 import info.share.portal.domain.enums.Status;
@@ -102,6 +103,7 @@ privileged aspect TaskControler_Roo_Controller {
     void TaskControler.populateEditForm(Model uiModel, Task task) {
         uiModel.addAttribute("task", task);
         addDateTimeFormatPatterns(uiModel);
+        uiModel.addAttribute("offers", Offer.findAllOffers());
         uiModel.addAttribute("categorys", Arrays.asList(Category.values()));
         uiModel.addAttribute("statuses", Arrays.asList(Status.values()));
         uiModel.addAttribute("shareusers", ShareUser.findAllShareUsers());

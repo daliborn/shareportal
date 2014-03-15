@@ -3,12 +3,14 @@
 
 package info.share.portal.domain;
 
+import info.share.portal.domain.Offer;
 import info.share.portal.domain.Task;
 import info.share.portal.domain.enums.Category;
 import info.share.portal.domain.enums.Status;
 import info.share.portal.domain.security.ShareUser;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.Set;
 
 privileged aspect Task_Roo_JavaBean {
     
@@ -90,6 +92,14 @@ privileged aspect Task_Roo_JavaBean {
     
     public void Task.setShareUser(ShareUser shareUser) {
         this.shareUser = shareUser;
+    }
+    
+    public Set<Offer> Task.getOffers() {
+        return this.offers;
+    }
+    
+    public void Task.setOffers(Set<Offer> offers) {
+        this.offers = offers;
     }
     
 }

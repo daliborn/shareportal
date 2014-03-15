@@ -14,7 +14,7 @@ privileged aspect Task_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager Task.entityManager;
     
-    public static final List<String> Task.fieldNames4OrderClauseFilter = java.util.Arrays.asList("description", "startPrice", "name", "creationDate", "updateDate", "taskStartDate", "taskEndDate", "category", "status", "shareUser");
+    public static final List<String> Task.fieldNames4OrderClauseFilter = java.util.Arrays.asList("description", "startPrice", "name", "creationDate", "updateDate", "taskStartDate", "taskEndDate", "category", "status", "shareUser", "offers");
     
     public static final EntityManager Task.entityManager() {
         EntityManager em = new Task().entityManager;

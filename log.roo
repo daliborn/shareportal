@@ -155,3 +155,4 @@ field number --fieldName price --type java.math.BigDecimal --notNull
 field date --fieldName createDate --type java.util.Date --past 
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-15 12:05:22
 focus --class ~.domain.Task
+field set --fieldName offers --type ~.domain.Offer --cardinality ONE_TO_MANY --mappedBy task
