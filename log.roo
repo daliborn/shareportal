@@ -160,3 +160,4 @@ focus --class ~.domain.Offer
 field reference --fieldName task --type ~.domain.Task --cardinality MANY_TO_ONE 
 focus --class ~.domain.security.ShareUser
 field set --fieldName offers --type ~.domain.Offer --cardinality ONE_TO_MANY --mappedBy user
+focus --class ~.domain.Offer
