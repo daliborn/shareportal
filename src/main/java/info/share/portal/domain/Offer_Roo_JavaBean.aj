@@ -5,6 +5,7 @@ package info.share.portal.domain;
 
 import info.share.portal.domain.Offer;
 import info.share.portal.domain.Task;
+import info.share.portal.domain.security.ShareUser;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -40,6 +41,14 @@ privileged aspect Offer_Roo_JavaBean {
     
     public void Offer.setTask(Task task) {
         this.task = task;
+    }
+    
+    public ShareUser Offer.getShareuser() {
+        return this.shareuser;
+    }
+    
+    public void Offer.setShareuser(ShareUser shareuser) {
+        this.shareuser = shareuser;
     }
     
 }

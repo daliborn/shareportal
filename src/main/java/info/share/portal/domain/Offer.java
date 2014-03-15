@@ -10,6 +10,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Past;
 import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.ManyToOne;
+import info.share.portal.domain.security.ShareUser;
 
 @RooJavaBean
 @RooToString
@@ -37,4 +38,9 @@ public class Offer {
      */
     @ManyToOne
     private Task task;
+
+    /**
+     */
+    @ManyToOne
+    private ShareUser shareuser;
 }

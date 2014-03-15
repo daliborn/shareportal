@@ -31,6 +31,6 @@ public class ShareUser {
 
     /**
      */
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "shareuser")
     private Set<Offer> offers = new HashSet<Offer>();
 }

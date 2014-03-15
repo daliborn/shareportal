@@ -6,6 +6,7 @@ package info.share.portal.domain;
 import info.share.portal.domain.Offer;
 import info.share.portal.domain.OfferDataOnDemand;
 import info.share.portal.domain.TaskDataOnDemand;
+import info.share.portal.domain.security.ShareUserDataOnDemand;
 import java.math.BigDecimal;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -25,6 +26,9 @@ privileged aspect OfferDataOnDemand_Roo_DataOnDemand {
     private Random OfferDataOnDemand.rnd = new SecureRandom();
     
     private List<Offer> OfferDataOnDemand.data;
+    
+    @Autowired
+    ShareUserDataOnDemand OfferDataOnDemand.shareUserDataOnDemand;
     
     @Autowired
     TaskDataOnDemand OfferDataOnDemand.taskDataOnDemand;
