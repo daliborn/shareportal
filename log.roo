@@ -151,3 +151,4 @@ field enum --type ~.domain.enums.EnumRole --fieldName authority --notNull
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-15 08:43:14
 entity jpa --class ~.domain.Offer --testAutomatically 
 field string --fieldName description --notNull 
+field number --fieldName price --type java.math.BigDecimal --notNull 

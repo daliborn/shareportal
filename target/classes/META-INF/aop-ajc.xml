@@ -11,6 +11,7 @@
 <aspect name="info.share.portal.domain.security.ShareUser_Roo_Jpa_Entity"/>
 <aspect name="info.share.portal.domain.security.ShareUser_Roo_ToString"/>
 <aspect name="info.share.portal.domain.security.SecurityRole_Roo_Jpa_ActiveRecord"/>
+<aspect name="info.share.portal.domain.Offer_Roo_JavaBean"/>
 <aspect name="info.share.portal.domain.Task_Roo_Jpa_ActiveRecord"/>
 <aspect name="info.share.portal.web.TaskControler_Roo_Controller"/>
 <aspect name="info.share.portal.domain.security.ShareUser_Roo_JavaBean"/>

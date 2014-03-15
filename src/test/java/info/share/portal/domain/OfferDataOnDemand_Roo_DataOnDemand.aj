@@ -5,6 +5,7 @@ package info.share.portal.domain;
 
 import info.share.portal.domain.Offer;
 import info.share.portal.domain.OfferDataOnDemand;
+import java.math.BigDecimal;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -25,12 +26,18 @@ privileged aspect OfferDataOnDemand_Roo_DataOnDemand {
     public Offer OfferDataOnDemand.getNewTransientOffer(int index) {
         Offer obj = new Offer();
         setDescription(obj, index);
+        setPrice(obj, index);
         return obj;
     }
     
     public void OfferDataOnDemand.setDescription(Offer obj, int index) {
         String description = "description_" + index;
         obj.setDescription(description);
+    }
+    
+    public void OfferDataOnDemand.setPrice(Offer obj, int index) {
+        BigDecimal price = BigDecimal.valueOf(index);
+        obj.setPrice(price);
     }
     
     public Offer OfferDataOnDemand.getSpecificOffer(int index) {

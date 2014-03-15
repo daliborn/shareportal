@@ -4,6 +4,7 @@
 package info.share.portal.domain;
 
 import info.share.portal.domain.Offer;
+import java.math.BigDecimal;
 
 privileged aspect Offer_Roo_JavaBean {
     
@@ -13,6 +14,14 @@ privileged aspect Offer_Roo_JavaBean {
     
     public void Offer.setDescription(String description) {
         this.description = description;
+    }
+    
+    public BigDecimal Offer.getPrice() {
+        return this.price;
+    }
+    
+    public void Offer.setPrice(BigDecimal price) {
+        this.price = price;
     }
     
 }
