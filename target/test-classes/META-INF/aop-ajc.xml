@@ -1,25 +1,25 @@
 <aspectj>
 <aspects>
 <aspect name="info.share.portal.domain.ShareUserIntegrationTest_Roo_IntegrationTest"/>
-<aspect name="info.share.portal.domain.TaskDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="info.share.portal.domain.security.SecurityRoleIntegrationTest_Roo_Configurable"/>
+<aspect name="info.share.portal.domain.TaskDataOnDemand_Roo_Configurable"/>
+<aspect name="info.share.portal.domain.security.SecurityRoleDataOnDemand_Roo_Configurable"/>
+<aspect name="info.share.portal.domain.security.ShareUserDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="info.share.portal.domain.ShareUserIntegrationTest_Roo_Configurable"/>
+<aspect name="info.share.portal.domain.OfferIntegrationTest_Roo_Configurable"/>
+<aspect name="info.share.portal.domain.security.ShareUserIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="info.share.portal.domain.ShareUserDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="info.share.portal.domain.security.ShareUserDataOnDemand_Roo_Configurable"/>
 <aspect name="info.share.portal.domain.security.ShareUserIntegrationTest_Roo_Configurable"/>
 <aspect name="info.share.portal.domain.OfferIntegrationTest_Roo_IntegrationTest"/>
 <aspect name="info.share.portal.domain.security.SecurityRoleIntegrationTest_Roo_IntegrationTest"/>
-<aspect name="info.share.portal.domain.TaskIntegrationTest_Roo_Configurable"/>
-<aspect name="info.share.portal.domain.TaskIntegrationTest_Roo_IntegrationTest"/>
-<aspect name="info.share.portal.domain.ShareUserIntegrationTest_Roo_Configurable"/>
 <aspect name="info.share.portal.domain.ShareUserDataOnDemand_Roo_Configurable"/>
 <aspect name="info.share.portal.domain.OfferDataOnDemand_Roo_Configurable"/>
-<aspect name="info.share.portal.domain.TaskDataOnDemand_Roo_Configurable"/>
+<aspect name="info.share.portal.domain.TaskIntegrationTest_Roo_Configurable"/>
 <aspect name="info.share.portal.domain.security.SecurityRoleDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="info.share.portal.domain.TaskIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="info.share.portal.domain.TaskDataOnDemand_Roo_DataOnDemand"/>
 <aspect name="info.share.portal.domain.OfferDataOnDemand_Roo_DataOnDemand"/>
-<aspect name="info.share.portal.domain.security.SecurityRoleDataOnDemand_Roo_Configurable"/>
-<aspect name="info.share.portal.domain.OfferIntegrationTest_Roo_Configurable"/>
-<aspect name="info.share.portal.domain.security.ShareUserDataOnDemand_Roo_DataOnDemand"/>
-<aspect name="info.share.portal.domain.security.ShareUserIntegrationTest_Roo_IntegrationTest"/>
-<aspect name="info.share.portal.domain.security.ShareUserDataOnDemand_Roo_Configurable"/>
-<aspect name="info.share.portal.domain.ShareUserDataOnDemand_Roo_DataOnDemand"/>
-<aspect name="info.share.portal.domain.security.SecurityRoleIntegrationTest_Roo_Configurable"/>
 </aspects>
 </aspectj>
 

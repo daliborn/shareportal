@@ -164,3 +164,8 @@ focus --class ~.domain.Offer
 // [failed] field reference --fieldName user --type ~.domain.security.ShareUser --cardinality MANY_TO_ONE 
 field reference --fieldName shareuser --type ~.domain.security.ShareUser --cardinality MANY_TO_ONE 
 web mvc scaffold --class ~.web.OfferControler --backingType ~.domain.Offer
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-15 17:27:41
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-19 22:39:08
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-03-19 22:41:10
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-03-21 19:09:09
+addon search --requiresDescription vadin
